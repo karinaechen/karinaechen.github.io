@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo: 400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans: 400,500,700');
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #1F2120;/*#1F2D20;/*#2F303A;*/
+	font-family: Josefin Sans, sans-serif;
+	font-size: 1.2rem;
+	color: white;
+	min-height: 100vh;
+}
+
+/*h1 {
+	font-family: Cardo;
+	font-weight: bold;
+}*/
+
+.full-height-grow {
+	display: flex;
+	flex-direction: column;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	font-size: 1.25em;
+	color: inherit;
+	text-decoration: none;
+}
+
+.logo img {
+	width: 55px;
+}
+
+.logo-name {
+	margin-left: 1rem;
+}
+
+.main-nav ul, .footer-nav ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main-nav a, .footer-nav a{
+	color: inherit;
+	text-decoration: none;
+	padding: 1rem;
+}
+
+.main-nav a:hover, .footer-nav a:hover {
+	color: #adadad;
+}
+
+.main-header, .main-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-header {
+	height: 100px;
+	margin-bottom: 2rem;
+}
+
+.main-footer {
+	height: 70px;
+	background-color: #060E06;/*#202027;*/
+	font-weight: bold;
+	margin-top: 3rem;
+}
+
+.social-link img {
+	width: 1em;
+	margin-right: 0.25rem;
+}
+
+.main-footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 40px;
+	flex-grow: 1;
+}
+
+.title {
+	font-weight: 500;
+	font-size: 3em;
+	margin-bottom: 1rem;
+	margin-top: 0;
+}
+
+.subtitle {
+	font-weight: 500;
+	font-size: 1.2em;
+	margin-bottom: 2rem;
+}
+
+.btn {
+	color: white;
+	background-color: #DC4343;
+	padding: .75rem 1.5rem;
+	border-radius: .5rem;
+	text-decoration: none;
+	font-size: .9rem;
+}
+
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 2%;
+}
+
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 7px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 48%;
+    flex: 48%;
+    max-width: 48%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+	#no-show-mobile {
+		display: none;
+	}
+
+	.column {
+    -ms-flex: 95%;
+    flex: 95%;
+    max-width: 95%;
+  }
+
+  .main-footer {
+  	display: none;
+  }
+}

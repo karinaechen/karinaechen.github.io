@@ -1,0 +1,58 @@
+.crochet-main-section, .item-main-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+
+.crochet-main-section img, .item-main-section img {
+	width: 30vw;
+	margin-right: 2rem;
+	height: auto;
+	max-width: 350px;
+}
+
+@media (max-width: 800px) {
+	.crochet-main-section, .item-main-section {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.crochet-main-section img, .item-main-section img {
+		margin-top: 2rem;
+		height: 30vh;
+		width: auto;
+	}
+}
+
+@media (max-width: 420px) {
+	.crochet-main-section, .item-main-section {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.crochet-main-section img {
+		height: 10vh;
+		width: auto;
+	}
+
+	.item-main-section img {
+		height: 30vh;
+		width: auto;
+		padding-bottom: 1rem;
+	}
+
+	#no-show-mobile {
+		display: none;
+	}
+}
+
+
+a:hover {
+	color: #adadad;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}

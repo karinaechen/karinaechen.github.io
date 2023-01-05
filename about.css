@@ -1,0 +1,114 @@
+.about-main-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+
+.about-main-section .about-me-image {
+	width: 30vw;
+	margin-left: 2rem;
+	height: auto;
+	max-width: 350px;
+}
+
+.contact-section {
+	display: flex;
+}
+
+.icon {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+}
+
+.icon img {
+	width: 40px;
+}
+
+@media (max-width: 800px) {
+	.about-main-section {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.about-main-section .about-me-image {
+		margin-top: 2rem;
+		height: 30vh;
+		width: auto;
+	}
+
+	.about-main-section .about-me-image {
+		margin-left: 0;
+		margin-bottom: 2rem;
+	}
+}
+
+.email {
+	font-weight: 500;
+	font-size: 1.2em;
+	margin-bottom: 2rem;
+	color: white;
+	text-decoration: none;
+	/*font-family: Cardo;
+	font-weight: bold;*/
+}
+
+.subtitle a:hover, .about-me a:hover {
+	color: #adadad;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.shape-1 {
+  position: absolute;
+  overflow: hidden;
+  width: 35vw;
+  height: 35vw;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.shape-1::before {
+  content: '';
+  transform: translateX(-20%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgb(58,119,158,0.1);
+}
+
+.shape-2 {
+  position: absolute;
+  overflow: hidden;
+  width: 30vw;
+  height: 30vw;
+  top: 0;
+  left: 20vw;
+  z-index: -1;
+}
+
+.shape-2::before {
+  content: '';
+  transform: translateY(-30%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgb(127,191,130,0.1);
+}
+
+
+@media (max-width: 420px) {
+	.about-main-section .about-me-image {
+		margin-left: 0;
+		margin-bottom: 2rem;
+	}
+}
