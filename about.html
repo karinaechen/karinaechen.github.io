@@ -7,128 +7,198 @@
 	<title>About Me - Karina Chen</title>
 	<link rel="stylesheet" href="style.css"/>
 	<link rel="stylesheet" href="about.css"/>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+	<link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico"/>
+	<script src="index.js"></script>
 </head>
-<body class="full-height-grow">
+<body class="container full-height-grow">
+
 	<div class="container full-height-grow">
-	<header class="main-header">
-		<a href="index.html" class="logo">
-			<img src="imgs/logo.png">
-			<!--<div class="logo-name">Karina Chen</div>-->
-		</a>
-		<nav class="main-nav">
-			<ul>
-				<li><a href='projects.html'>Projects</a></li>
-				<li><a href='crochet.html'>Crochet</a></li>
-				<li><a href='about.html'>About</a></li>
-				<li id="no-show-mobile"><a href='KarinaChen_Resume.pdf' target="_blank">Resume</a></li>
-				<li id="no-show-mobile"><a href='about.html#contact'>Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<section class="about-main-section">
-		<div class="about-me">
-			<h1 class="title">About Me!</h1>
-			<p>I'm Karina, a student at UC San Diego pursuing a B.S. in data science and a minor in design! I grew up creating art, and math has always been my favorite subject, making my major and minor very suited to both my interests and strengths.</p>
-			<p>Outside of academics, I crochet, read, and draw stickers (see some <a href="https://www.redbubble.com/people/createdbykarina/shop" target="_blank">here</a>). I mainly crochet amigurumi, which is making small stuffed animals, but I have also made bags and other items like coasters and scrunchies (see some of my creations <a href="crochet.html">here</a>). I read a variety of genres, and besides my childhood go-tos of <i>Harry Potter</i> and <i>Percy Jackson</i>, some of my current favorite books include <i>When Breath Becomes Air</i> by Paul Kalanithi, <i>Anxious People</i> and <i>And Every Morning the Way Home Gets Longer and Longer</i> by Fredik Backman, and <i>The Spy and the Traitor</i> by Ben Macintyre.</p>
-			<p>Find my resume <a href="KarinaChen_Resume.pdf" target="_blank">here</a> and see some of my projects <a href="projects.html">here</a>!</p>
-			<p>Here is my transcript as well: <a href="academichistoryreview.pdf" target="_blank">link</a>!</p>
-		</div>
-
-		<img src="imgs/me.jpg" class="about-me-image">
-	</section>
-
-	<section class="contact-me" id="contact">
-		<span class="subtitle">
-			<a href="mailto:karina.e.chen@gmail.com" target="_blank" class="email">karina.e.chen@gmail.com</a>
-		</span>
-
-		<div class="contact-section">
-			<div class="icon">
-				<a href="https://www.linkedin.com/in/karina-e-chen/" target="_blank">
-					<img src="imgs/linkedin.png" alt="Linkedin">
+		<div class="landing-page" id="about">
+			<header class="main-header">
+				<a href="index.html" class="logo">
+					<img src="imgs/logo.png">
 				</a>
-			</div>
-			<div class="icon">
-				<a href="https://github.com/karinaechen" target="_blank">
-					<img src="imgs/github.png" alt="GitHub">
-				</a>
-			</div>
-			<div class="icon">
-				<a href="https://www.instagram.com/karinaechen/" target="_blank">
-					<img src="imgs/instagram.png" alt="Instagram">
-				</a>
-			</div>
-		</div>
-	</section>
+				<nav class="main-nav">
+					<ul>
+						<li><a href='about.html'>about</a></li>
+						<li><a href='projects.html'>projects</a></li>
+						<li id="no-show-mobile"><a href='KarinaChen_Resume.pdf' target="_blank">resume</a></li>
+					</ul>
+				</nav>
+			</header>
 
-	<!--<section class="about-main-section">
-		<div class="about-me">
-			<h1 class="title">Karina Chen</h1>
-			I'm a student at UC San Diego pursuing a B.S. in data science and a minor in design! Outside of academics, I crochet, read, and draw <a href="https://www.redbubble.com/people/createdbykarina/shop" target="_blank">stickers</a>.
-			<br>
+			<div class="main-about-landing">
+				<section class="about-main-section">
+					<div class="about-me">
+						<p>I'm currently a third-year undergraduate student at UC San Diego!
+							I am majoring in data science and minoring in design, and plan to graduate in
+							March 2024.</p>
+					</div>
 
-			<span class="subtitle">
-				<a href="mailto:karina.e.chen@gmail.com" target="_blank" class="email">karina.e.chen@gmail.com</a>
-			</span>
+					<img src="imgs/me.jpg" class="about-me-image">
 
-			<div class="contact-section">
-				<div class="icon">
-					<a href="https://www.linkedin.com/in/karina-e-chen/" target="_blank">
-						<img src="imgs/linkedin.png" alt="Linkedin">
-					</a>
-				</div>
-				<div class="icon">
-					<a href="https://github.com/karinaechen" target="_blank">
-						<img src="imgs/github.png" alt="GitHub">
-					</a>
-				</div>
-				<div class="icon">
-					<a href="https://www.instagram.com/" target="_blank">
-						<img src="imgs/instagram.png" alt="Instagram">
-					</a>
-				</div>
+					<div class="side-nav">
+						<a href="#about">about</a>
+						<a href="#education">education</a>
+						<a href="#experience">experience</a>
+						<a href="#skills">skills</a>
+					</div>
+				</section>
+				
+			</div>
+			<div class="next-scroll" onclick="scrollNext('education')">
+				<span onclick="scrollNext('education')" id="scroll">next</span>
+				<div onclick="scrollNext('education')" class="arrow-down"></div>
 			</div>
 		</div>
 
-		<img src="imgs/me.jpg" class="about-me-image">
-	</section>-->
+		<div class="education" id="education">
+			<h1>-education-</h1>
+			<div class="overall-section">
+				<section class="item">
+					<h2>University of California, San Diego</h2>
+					<h3>Data Science B.S., Design Minor | Sept 2020 - Mar 2024</h3>
+					<!-- <h4>Sept 2020 - Mar 2024</h4> -->
+					<h4>3.98 (senior standing) | Provost Honors</h4>
+					<h4>Relevant Coursework</h4>
+					<table class="course-list">
+						<tr><td class="num">MATH 20C</td><td class="name">Calculus & Analytical Geometry</td></tr>
+						<tr><td class="num">MATH 189</td><td class="name">Data Analysis & Inference in R</td></tr>
+						<tr><td class="num">DSC 100</td><td class="name">Data Management</td></tr>
+						<tr><td class="num">DSC 20, DSC 30</td><td class="name">Data Structures and Algorithms for Data Science</td></tr>
+						<tr><td class="num">DSC 106</td><td class="name">Data Visualization</td></tr>
+						<tr><td class="num">CSE 151B*</td><td class="name">Deep Learning</td></tr>
+						<tr><td class="num">DSGN 1</td><td class="name">Design of Everyday Things</td></tr>
+						<tr><td class="num">COGS 121*</td><td class="name">HCI Portfolio Design Studio</td></tr>
+						<tr><td class="num">COGS 120</td><td class="name">Interaction Design</td></tr>
+						<tr><td class="num">MATH 18</td><td class="name">Linear Algebra</td></tr>
+						<tr><td class="num">DSC 140A, CSE 151A</td><td class="name">Probabilistic Modeling & Machine Learning</td></tr>
+						<tr><td class="num">MATH 181A</td><td class="name">Mathematical Statistics</td></tr>
+						<tr><td class="num">COGS 108, DSC 80, DSC 10</td><td class="name">Practice / Principles of Data Science</td></tr>
+						<tr><td class="num">MATH 180A</td><td class="name">Probability</td></tr>
+						<tr><td class="num">CSE 158</td><td class="name">Recommender Systems & Web Mining</td></tr>
+						<tr><td class="num">DSC 140B*</td><td class="name">Representation Learning</td></tr>
+						<tr><td class="num">DSC 102</td><td class="name">System for Scalable Analytics</td></tr>
+						<tr><td class="num">DSC 40A, DSC 40</td><td class="name">Theoretical Foundations of Data Science</td></tr>
+					</table>
+					<!-- <div class="course-list">
+						<ul class="course-numbers">
+							<li>MATH 20C</li>
+							<li>MATH 189</li>
+							<li>DSC 100</li>
+							<li>DSC 20, DSC 30</li>
+							<li>DSC 106</li>
+							<li>CSE 151B*</li>
+							<li>DSGN 1</li>
+							<li>COGS 121*</li>
+							<li>COGS 120</li>
+							<li>MATH 18</li>
+							<li>DSC 140A, CSE 151A</li>
+							<li>MATH 181A</li>
+							<li>COGS 108, DSC 80, DSC 10</li>
+							<li>MATH 180A</li>
+							<li>CSE 158</li>
+							<li>DSC 140B*</li>
+							<li>DSC 102</li>
+							<li>DSC 40A, DSC 40B</li>
+						</ul>
+						<ul class="course-names">
+							<li>Calculus & Analytical Geometry</li>
+							<li>Data Analysis & Inference in R</li>
+							<li>Data Management</li>
+							<li>Data Structures and Algorithms for Data Science</li>
+							<li>Data Visualization</li>
+							<li>Deep Learning</li>
+							<li>Design of Everyday Things</li>
+							<li>HCI Portfolio Design Studio</li>
+							<li>Interaction Design</li>
+							<li>Linear Algebra</li>
+							<li>Probabilistic Modeling & Machine Learning</li>
+							<li>Mathematical Statistics</li>
+							<li>Practice / Principles of Data Science</li>
+							<li>Probability</li>
+							<li>Recommender Systems & Web Mining</li>
+							<li>Representation Learning</li>
+							<li>System for Scalable Analytics</li>
+							<li>Theoretical Foundations of Data Science</li>
+						</ul>
+					</div> -->
+				</section>
+			</div>
+			<div class="next-scroll" onclick="scrollNext('experience')">
+				<span onclick="scrollNext('experience')" id="scroll">next</span>
+				<div class="arrow-down" onclick="scrollNext('experience')"></div>
+			</div>
+		</div>
 
+		<div class="experience" id="experience">
+			<h1>-experience-</h1>
+			<div class="overall-section">
+				<section class="item">
+					<h2>Halicioglu Data Science Institute</h2>
+					<h3>Instructional Assistant / Tutor | Jan 2022 - Dec 2022</h3>
+					<!-- <h4>Jan 2022 - Dec 2022</h4> -->
+					<ul>
+						<li>Tutored three quarters of classes of 150+ students in 
+							DSC20: Programming & Data Structures in Python</li>
+						<li>Debugged code and explained course concepts including 
+							simple data structures, recursion, and object-oriented 
+							programming in one-on-one office hours held at least 4 
+							hours a week, resolving 300+ student tickets</li>
+						<li>Coordinated and communicated with teaching staff regarding
+							class logistics of writing homework and answering questions 
+							on the class forum</li>
+						<li>Graded 450+ student assignments and assessments and proctored 
+							student examinations</li>
+					</ul>
+				</section>
+				<section class="item">
+					<h2>Hey Social Good</h2>
+					<h3>Data Science Intern | Mar 2021 - Sep 2021</h3>
+					<!-- <h4>Mar 2021 - Sep 2021</h4> -->
+					<ul>
+						<li>Captured data from 50+ publicly available websites using 
+							Python packages Selenium and BeautifulSoup</li>
+						<li>Designed and formatted the translation of captured social 
+							good business data into custom designed PDF documents with 
+							4-person Data Analytics Team</li>
+						<li>Supported company's Sentiment Analysis Project by testing 
+							the applicability of Twitter's social information using Twitter 
+							API and Microsoft Azure Text Analytics API</li>
+						<li>Presented results, contributions, and challenges to the CEO 
+							on success of sentiment analysis project</li>
+					</ul>
+				</section>
+			</div>
+			<div class="next-scroll" onclick="scrollNext('skills')">
+				<span onclick="scrollNext('skills')" id="scroll">next</span>
+				<div class="arrow-down" onclick="scrollNext('skills')"></div>
+			</div>
+		</div>
+
+		<div class="skills" id="skills">
+			<h1>-skills-</h1>
+			<div class="overall-section">
+				<section class="item">
+					<h2>Languages</h2>
+					<p>Python, Java, SQL, HTML, CSS, Javascript, R</p>
+				</section>
+				<section class="item">
+					<h2>Libraries</h2>
+					<p>Pandas, Numpy, Scikit-learn, BeautifulSoup, Matplotlib, Seaborn, D3, Scipy</p>
+				</section>
+				<section class="item">
+					<h2>Other</h2>
+					<p>Figma, Jupyter Notebook, Git, Tableau, RStudio, LaTeX, Microsoft Office</p>
+				</section>
+			</div>
+		</div>
+		
 	</div>
 
-	<div class="shape-1"></div>
-	<div class="shape-2"></div>
-
-	<footer class="main-footer">
-		<div class="container">
-			<!--<nav class="footer-nav">
-				<ul>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-				</ul>
-			</nav>
-			<nav class="footer-nav">
-				<ul>
-					<li>
-						<a href="#" class="social-link">
-							<img src="imgs/linkedin.png">
-						</a>
-					</li>
-					<li>
-						<a href="#" class="social-link">
-							<img src="imgs/github.png">
-						</a>
-					</li>
-					<li>
-						<a href="#" class="social-link">
-							<img src="imgs/instagram.png">
-						</a>
-					</li>
-				</ul>
-			</nav>
-		-->
-		</div>
+	<footer onclick="topFunction()" class="main-footer">
+		<div class="arrow"></div>
+		<span onclick="topFunction()" id="to-top">back to top</span>
 	</footer>
 
 </body>

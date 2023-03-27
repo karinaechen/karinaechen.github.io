@@ -1,15 +1,14 @@
 .projects-main-section {
-	display: grid;
+	/* display: grid;
 	grid-template: 1fr / 1fr;
 	place-items: center;
-	grid-row-gap: 4rem;
-}
-
-.projects-main-section .survivor-logo-image, .projects-main-section .cogs108-image {
-	width: 30vw;
-	margin-right: 2rem;
-	height: auto;
-	max-width: 350px;
+	grid-row-gap: 4rem; */
+	grid-template-columns: repeat(1, minmax(0px, 1fr));
+	gap: 4vh;
+	display: grid;
+	margin-left: 7vw;
+	margin-right: 7vw;
+	padding-top: 7vh;
 }
 
 .project {
@@ -19,7 +18,16 @@
 	flex-grow: 1;
 }
 
-@media (max-width: 800px) {
+.projects-main-section a:hover {
+	color: #C3E1C0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* @media (max-width: 800px) {
 	.projects-main-section {
 		flex-direction: column;
 		justify-content: center;
@@ -27,83 +35,7 @@
 	.projects-main-section .survivor-logo-image, .projects-main-section .cogs108-image {
 		display: none;
 	}
-
-	/*.projects-main-section .survivor-logo-image, .projects-main-section .cogs108-image {
-		margin-top: 2rem;
-		height: 30vh;
-		width: auto;
-	}
-	.projects-main-section .survivor-logo-image, .projects-main-section .cogs108-image {
-		margin-right: 0;
-		margin-bottom: 2rem;
-	}*/
-}
-
-.github {
-	margin-bottom: 2rem;
-	color: white;
-	text-decoration: none;
-}
-
-.my-github a:hover, .survivor a:hover, .cogs108 a:hover {
-	color: #adadad;
-}
-
-a {
-	text-decoration: none;
-	color: white;
-}
-
-.shape-1 {
-  position: absolute;
-  overflow: hidden;
-  width: 30vw;
-  height: 30vw;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.shape-1::before {
-  content: '';
-  transform: translateX(-20%);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  background-color: rgb(127,191,130,0.1);
-}
-
-.shape-2 {
-  position: absolute;
-  overflow: hidden;
-  width: 18vw;
-  height: 18vw;
-  top: 0;
-  left: 20vw;
-  z-index: -1;
-}
-
-.shape-2::before {
-  content: '';
-  transform: translateY(-30%);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  background-color: rgb(58,119,158,0.1);
-}
-
-.shape-3 {
-	position: absolute;
-	width: 15vw;
-	height: 15vw;
-	border-radius: 50%;
-	background-color: rgb(153,120,93,0.1);
-	top: 70vh;
-	left: 80vw;
-	z-index: -1;
-}
+} */
 
 
 /*@media (max-width: 420px) {
