@@ -70,9 +70,10 @@
 	padding-bottom: 3vh;
 }
 .project:hover {
-	background-color: #E6E6E6;
+	/* background-color: #E6E6E6; */
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 	cursor: pointer;
+	transform: scale(1.01);
 }
 
 
@@ -109,6 +110,7 @@
 
 .project a:hover, .social a:hover {
 	color: #C3E1C0;
+	/* transform: scale(1.02); */
 }
 
 /* .bottom {
