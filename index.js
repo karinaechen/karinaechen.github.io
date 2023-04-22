@@ -1,4 +1,18 @@
-// let mybutton = document.getElementById("myBtn");
+document.getElementById('main-landing').addEventListener("mousemove", evt => {
+  const mouseX = evt.clientX;
+  const mouseY = evt.clientY;
+
+  gsap.set(".cursor", {
+    x: mouseX,
+    y: mouseY });
+
+
+  gsap.to(".shape", {
+    x: mouseX,
+    y: mouseY,
+    stagger: -0.1 });
+
+});
 
 function Position(obj){
   var currenttop = 0;

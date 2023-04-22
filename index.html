@@ -5,76 +5,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Karina Chen</title>
-	<link rel="stylesheet" href="style.css"/>
+	<!-- <link rel="stylesheet" href="style.css"/> -->
 	<link rel="stylesheet" href="index.css"/>
 	<link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico"/>
-	<script src="index.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
 </head>
 <body class="container full-height-grow">
-	<div class="landing-page">
-		<header class="main-header">
-			<a href="index.html" class="logo">
-				<img src="imgs/logo.png">
-			</a>
-			<nav class="main-nav">
-				<ul>
-					<li><a href='about.html'>about</a></li>
-					<li><a href='projects.html'>projects</a></li>
-					<li id="no-show-mobile"><a href='KarinaChen_Resume.pdf' target="_blank">resume</a></li>
-				</ul>
-			</nav>
-		</header>
 
-		<section class="home-main-section">
-			<div class="call-to-action">
-				<span class="subtitle">hello there! I'm</span>
-				<h1 class="title">karina<br>chen</h1>
-				<span class="subtitle">I'm a third-year student at UC San Diego studying data science and design :)</span>
-			</div>
-		</section>
+	<!-- https://codepen.io/carolineartz/pen/rNaGQYo -->
+	<div class="cursor"></div>
+	<div class="shapes">
+		<div class="shape shape-1"></div>
+		<div class="shape shape-2"></div>
+		<div class="shape shape-3"></div>
 	</div>
 
-	<div class="bottom">
-		<section class="home-secondary">
-			<div class="recent-projects">
-				<h1>-Recent Projects-</h1>
-				<div class="projects">
-					<section class="project" onclick="location.href = 'projects.html#survivor'">
-						<h2>Outwit, Outplay, Outlast:</h2>
-						<h3>An Analysis of the Characteristics that Contribute to the Success of Contestants on Survivor</h3>
-						<p>Python, Javascript, R, HTML, CSS</p>
-						<a href="https://github.com/karinaechen/survivor">github</a>
-					</section>
-					<section class="project" onclick="location.href = 'projects.html#website'">
-						<h2>Personal Website</h2>
-						<h3>Self-designed and coded website portfolio</h3>
-						<p>HTML, CSS, Javascript</p>
-						<a href="https://github.com/karinaechen/karinaechen.github.io">github</a>
-					</section>
-				</div>
-			</div>
-			<div class="social">
-				<h1>Get in touch!</h1>
-				<article class="icon">
-					<img src="imgs/email.png" class="social-icon">
-					<a href="mailto:karina.e.chen@gmail.com" target="_blank">karina.e.chen@gmail.com</a>
-				</article>
-				<article class="icon">
-					<img src="imgs/linkedin.png" class="social-icon">
-					<a href="https://www.linkedin.com/in/karina-e-chen/" target="_blank">karina-e-chen</a>
-				</article>
-				<article class="icon">
-					<img src="imgs/github.png" class="social-icon">
-					<a href="https://github.com/karinaechen" target="_blank">github.com/karinaechen</a>
-				</article>
-				<br>
-			</div>
-		</section>
+	<section class="home-main-section" id="main-landing">
+		<div class="call-to-action">
+			<span class="subtitle">hello there! I'm</span>
+			<h1 class="title">karina chen</h1>
+			<span class="subtitle">I'm a third-year student at UC San Diego studying data science and design :)</span>
+		</div>
 
-		<footer onclick="topFunction()" class="main-footer">
-			<div class="arrow"></div>
-			<span onclick="topFunction()" id="to-top">back to top</span>
-		</footer>
-	</div>
+		<div class="nav">
+			<ul>
+				<li><a href="about.html">about</a></li>
+				<li><a href="projects.html">projects</a></li>
+				<li><a href='KarinaChen_Resume.pdf' target="_blank">resume</a></li>
+			</ul>
+		</div>
+	</section>
+	<script src="index.js"></script>
+
 </body>
 </html>
