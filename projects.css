@@ -1,0 +1,46 @@
+.projects-main-section {
+	grid-template-columns: repeat(1, minmax(0px, 1fr));
+	/* gap: 4vh; */
+	display: grid;
+	margin-left: 7vw;
+	margin-right: 7vw;
+	/* padding-top: 7vh; */
+}
+
+.project {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-grow: 1;
+
+	color: #273F4B;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	/* padding-bottom: 2vh; */
+	border-radius: 25px;
+}
+
+.projects-main-section a:hover {
+	color: #70c464;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1 {
+	font-family: EB Garamond;
+	font-weight: lighter;
+	font-size: 2.5em;
+}
+h2 {
+	font-family: Open Sans;
+	font-weight: lighter;
+	font-size: 1.5em;
+}
+p {
+	font-family: Open Sans;
+	font-weight: lighter;
+	font-size: 1.1em;
+}

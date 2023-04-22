@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+.main-about-landing {
+	border-top: 1px dashed #273F4B;
+	font-family: EB Garamond;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-grow: 1;
+	text-align: left;
+	margin-top: 1vh;
+	padding-left: 7vw;
+	padding-right: 7vw;
+}
+
+.about-main-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-grow: 1;
+	text-align: left;
+}
+
+.about-me {
+	font-size: 2.5em;
+	padding-right: 7vw;
+}
+
+h1 {
+	font-family: EB Garamond;
+	font-weight: lighter;
+	font-size: 2.5em;
+}
+h2 {
+	font-family: Open Sans;
+	font-weight: lighter;
+	font-size: 1.5em;
+}
+h3 {
+	font-family: Open Sans;
+	font-weight: lighter;
+	font-size: 1.2em;
+}
+h4 {
+	font-family: Open Sans;
+	font-weight: lighter;
+	font-size: 1.1em;
+}
+.overall-section ul {
+	font-family: Open Sans;
+	font-weight: lighter;
+	font-size: 1em;
+	padding-right: 15vw;
+}
+
+.education, .experience {
+	border-top: 1px dashed #273F4B;
+	padding-left: 7vw;
+	padding-right: 7vw;
+	padding-bottom: 6vh;
+}
+
+.course-list {
+	font-family: Open Sans;
+	font-weight: lighter;
+	font-size: 0.8em;
+}
+.num, .language, .library {
+	vertical-align: top;
+	text-align: right;
+	padding-right: 10px;
+}
+.name, .desc {
+	vertical-align: top;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.skills {
+	font-family: Open Sans;
+	font-weight: lighter;
+	padding-bottom: 6vh;
+	border-top: 1px dashed #273F4B;
+	padding-left: 7vw;
+	padding-right: 7vw;
+}
+
+@media (max-width: 920px) {
+	.about-main-section {
+		flex-direction: column;
+		justify-content: center;
+		text-align: left;
+
+		margin-left: 1vw;
+		margin-right: 1vw;
+	}
+
+	.education, .experience { 
+		padding-top: 2vh;
+		min-height: calc(100vh - 2vh);
+	}
+	.skills {
+		padding-top: 2vh;
+		min-height: calc(100vh - 2vh - 70px);
+	}
+}
+
+@media (max-width: 280px) {
+	.about-main-section {
+		flex-direction: column;
+		justify-content: center;
+		text-align: left;
+
+		margin-left: 1vw;
+		margin-right: 0;
+	}
+
+	.education, .experience { 
+		padding-top: 2vh;
+	}
+	.skills {
+		padding-top: 2vh;
+	}
+}
