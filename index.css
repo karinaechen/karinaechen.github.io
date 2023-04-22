@@ -95,6 +95,13 @@ a:hover {
 	cursor: pointer;
 } */
 
+.nav a:hover {
+	box-shadow: inset 100px 0 0 0 #20431D;
+	/* #20431D; */
+	color: white;
+	cursor: pointer;
+}
+
 @media (min-width: 350px) {
 	h1 {
 		font-size: calc((0.1 * 100vw + (58px)));
