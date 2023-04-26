@@ -1,10 +1,11 @@
 .projects-main-section {
-	grid-template-columns: repeat(1, minmax(0px, 1fr));
+	/* grid-template-columns: repeat(1, minmax(0px, 1fr)); */
 	/* gap: 4vh; */
-	display: grid;
-	margin-left: 7vw;
-	margin-right: 7vw;
-	/* padding-top: 7vh; */
+	/* display: grid; */
+	/* padding-left: 7vw; */
+	/* padding-right: 7vw; */
+	margin-top: 1vh;
+	/* padding-top: 1vh; */
 }
 
 .project {
@@ -14,14 +15,18 @@
 	flex-grow: 1;
 
 	color: #273F4B;
-	padding-left: 2vw;
-	padding-right: 2vw;
-	/* padding-bottom: 2vh; */
-	border-radius: 25px;
+	padding-bottom: 2vh;
+	border-top: 1px dashed #273F4B;
+	padding-left: 7vw;
+	padding-right: 7vw;
 }
 
 .projects-main-section a:hover {
 	color: #70c464;
+}
+
+.my-github {
+	border-top: 1px dashed #273F4B;
 }
 
 a {
