@@ -15,8 +15,8 @@
 	flex-grow: 1;
 
 	color: #273F4B;
-	padding-bottom: 2vh;
-	border-top: 1px dashed #273F4B;
+	/* padding-bottom: 2vh; */
+	border-bottom: 1px dashed #273F4B;
 	padding-left: 7vw;
 	padding-right: 7vw;
 }
@@ -26,7 +26,9 @@
 }
 
 .my-github {
-	border-top: 1px dashed #273F4B;
+	/* border-top: 1px dashed #273F4B; */
+	padding-left: 7vw;
+	padding-right: 7vw;
 }
 
 a {
@@ -48,4 +50,44 @@ p {
 	font-family: Open Sans;
 	font-weight: lighter;
 	font-size: 1.1em;
+}
+
+.tab {
+	overflow: hidden;
+	background-color: white;
+	font-family: Open Sans;
+	padding-left: 7vw;
+	border-bottom: 1px dashed #273F4B;
+}
+  
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+  
+.tab button:hover {
+	background-color: #70c464;
+}
+  
+.tab button.active {
+	background-color: #52AA4B;
+	color: white;
+}
+  
+.tabcontent {
+	display: none;
+	/* padding: 6px 12px; */
+	/* border: 1px solid #70c464; */
+	border-top: none;
+}
+
+button {
+	font-family: Open Sans;
+	font-weight: lighter;
 }

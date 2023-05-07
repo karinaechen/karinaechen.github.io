@@ -1,0 +1,160 @@
+<html>  
+<head>  
+    <title>Case Study of Survivor Project - Karina Chen</title>
+    <link rel="stylesheet" href="case-studies.css">
+    <link rel="shortcut icon" type="image/x-icon" href="survivor/survivor-favicon.ico"/>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="#title">top</a>
+        <a href="#synopsis">synopsis of show</a>
+        <a href="#background">background</a>
+        <a href="#problem">problem</a>
+        <a href="#motivation">project motivation</a>
+        <a href="#existing-methods">existing methods</a>
+        <a href="#overview">project overview</a>
+        <a href="#process">project process</a>
+        <a href="#findings">main findings</a>
+        <a href="#reflection">reflection</a>
+    </div>
+
+    <div class="main">
+        <h1 id="title">Outwit, Outplay, Outlast</h1>
+        <h2>An Analysis of the Characteristics that Contribute to the Success of Contestants on Survivor</h2>
+        <h3 id="synopsis">Synopsis of the show</h3>
+            <p>Survivor is a show on CBS that has been airing since 2000 and is currently on its
+                44th season.</p>
+            <p>The motto of Survivor is to outwit, outplay, and outlast other contestants to make it to the end.
+                When first arriving to the island, contestants are split into separate tribes,
+                who live apart from each other. These tribes compete against each other to win
+                tribal immunity - the losing tribe goes to tribal council where the tribe members 
+                vote out one of their members. At around the halfway point of the game, the tribes 
+                merge into one, so everyone is now living together, challenges are for individual 
+                immunity, and everyone goes to tribal council. There are also reward challenges, 
+                where whoever wins usually can choose other contestants to join them on the reward 
+                (food or spa or scenic) usually used to strategize. After the merge, whoever is voted 
+                out joins the jury, and they observe the rest of the tribal councils. When there are 
+                two or three contestants left, it is final tribal council, where each contestant makes
+                their case to the jury of why they deserve to win, and the jury can also ask questions. 
+                The main advantage that has been introduced to the game are hidden immunity idols - 
+                if a contestant finds one, they are able to play it at a tribal council to have 
+                immunity from that vote.</p>
+        <h3 id="background">Background</h3>
+            <p>Each season of Survivor is a complex web of social dynamics, strategic gameplay, 
+                and unpredictable twists and turns that keep viewers engaged and guessing until the very end.
+                While some seasons have an obvious front-runner who dominates the gameplay in all aspects,
+                other seasons can be full of surprises, with underdogs rising to the top or unexpected alliances
+                shifting the balance of power. Despite the intricacies and dynamics in the game, viewers
+                continue to try and predict the winner each season; however, even longtime superfans of the
+                show can be left guessing, caught off guard by unexpected developments in the game. Over the
+                years, Survivor itself has also evolved, introducing new twists and advantages each season.
+                Given this ever-changing landscape, is it possible to predict the winner based on their
+                characteristics?</p>
+        <h3 id="problem">Problem</h3>
+            <p>Because Survivor has been such a long running show, it does have a certain
+                level of popularity  and a core group of fans and viewers that continue to watch each year. This 
+                means that there is a diverse population of viewers. While most viewers have fan favorite players 
+                that they root for and want to see win, there are some viewers whose dream is to compete on the show.
+                There are also some viewers who watch not just for entertainment, but because of the intricate 
+                social commentary and social dynamics of the show. 
+            </p>
+            <p>This means, whoever the viewer is, in general, it would be interesting and helpful to have a tool 
+                that predicts the winner of a season based on demographic and gameplay information. This can be done
+                during the airing of the current season with only basic information, or after the season ends with all
+                of the information. These transparent predictions would inform the different types of viewers listed
+                above, as you know what factors and information go into the model.</p>
+        <h3 id="motivation">Project motivation</h3>
+            <p>I was one of these viewers, who, after watching so many seasons of Survivor, and many
+                times being surprised by the winner, many times not, wanted to see if there was a way to
+                predict the winner, and see what characteristics or factors are common in previous
+                winners that could help predict future winners in future seasons. This is a personal
+                project of mine and it's also still in progress...</p>
+        <h3 id="existing-methods">Existing methods</h3>
+                <p id="existing-methods">Currently, the main way viewers predict winners is called 
+                <a href="https://insidesurvivor.com/survivor-edgic-an-introduction-3094" target="_blank">Edgic</a>.</p>
+            <img src="https://inside-survivor.ams3.digitaloceanspaces.com/wp-content/uploads/2015/09/RatingDefinitions.png" 
+                    alt="Edgic Rating Definitions" height="250px">
+            <img src="https://inside-survivor.ams3.digitaloceanspaces.com/wp-content/uploads/2015/09/Edgic-toneChartDefinitions.png" 
+                    alt="Edgic Tone Definitions" height="250px">
+            <img src="https://inside-survivor.ams3.digitaloceanspaces.com/wp-content/uploads/2015/09/Scale.png" 
+                    alt="Edgic Visibility Scale" height="80px">
+            <img src="https://inside-survivor.ams3.digitaloceanspaces.com/wp-content/uploads/2015/09/TableNamesColoursDone1.png" 
+                    alt="Edgic Chart Example" height="400px">
+            <p> Some of the cons of this method is that it is very time consuming and fairly subjective to the individual viewer.</p>
+            <p> How my project is different:
+                <ul>
+                    <li>Since I am using an online dataset, the features may be more limited in some
+                        ways but the data is indisputable. The features are not subjective.</li>
+                    <li>A ML model would run faster than meticulously analyzing each episode of
+                        a season.</li>
+                    <li>Edgic uses the edit of the show to make predictions, which this project
+                        doesn't take into account. The edit can tell viewers a lot about the dynamics 
+                        between players and reveal who the producers of the show are painting as villains
+                        (who likely will not win) and who are the underdogs (who are given aninspirational 
+                        storyline and are more likely to win). This means that the individuals they want us
+                        to root for are probably the ones who win or make it far in the game and probably
+                        have a better edit.</li>
+                </ul>
+            </p>
+        <h3 id="overview">Project overview</h3>
+            <p>
+                <ul>
+                    <li>I created a few visualizations for an open-ended "choose your own topic" class project for which I knew I wanted to
+                        use for this project.</li>
+                    <li>I have attempted to code some models thus far... which are currently failing.
+                        This means either my models are not on the right track or there is just not a good
+                        way to predict (no factors stick out as important).</li>
+                </ul>
+            </p>
+        <h3 id="process">Project process</h3>
+            <p>The project process that I took can be likened to the Survivor process.</p>
+                <ul>
+                    <li>Meet the contestants (Exploratory Data Analysis):
+                        The first thing I did was look at all the data and perform
+                        some exploratory data analysis. This was done by looking at descriptive statistics and 
+                        making visualizations for some of the features.</li>
+                        <img src="survivor/personality-type.png" alt="visualization" height="250px">
+                        <img src="survivor/gender-race.png" alt="visualization" height="250px">
+                        <img src="survivor/vote.png" alt="visualization" height="250px">
+                    <li>Tribal council (Data Cleaning and Prepping):
+                        I then cleaned the data to get rid of redundant and unhelpful features.
+                    </li>
+                    <li>Merge (Data Combination): 
+                        Then, I combined the dataframes to get all of the necessary features into one place in order for the
+                        model to receive the complete information.</li>
+                        <img src="">
+                    <li>Individual challenges (Feature Engineering): 
+                        Using the merged dataframe, I performed feature engineering and reformatted the data by scaling or one hot
+                        encoding individual columns.
+                    </li>
+                    <li>Final tribal council (Run the Model): 
+                        Finally, I ran the model to get the predicted winner.</li>
+                </ul>
+                <p>This process was repeated multiple times, tuning features depending on what was successful or not. I am still in this process
+                of refining the model. The goal is to get a final model that performs better than random guessing.</p>
+        <h3 id="findings">Main findings</h3>
+            <p>
+                In progress... <br>
+                How much do contestants demographics such as age, personality type, where
+                they're from contribute to whether or not they win? <br>
+                How much do contestants' gameplay outcomes and actions contribute to whether
+                or not they win? <br>
+
+                A lot of luck is involved in this process, as many times individuals who win and come back to play again 
+                aren't as successful. In addition, the conditions of Survivor are meant to be harsh and unlike anything anyone has been
+                through before. Starving and living outside with horrible weather conditions along with sleep deprivation can really 
+                affect anyone's ability to make good, informed decisions.
+            </p>
+        <h3 id="reflection">Reflection</h3>
+        <p>
+            <ul>
+                <li>Challenges of this project</li>
+                <li>What I could continue doing with it</li>
+                <li>What could be better</li>
+                <li>What would I do differently next time</li>
+            </ul>
+        </p>
+    </div>
+</body>
+</html>  
