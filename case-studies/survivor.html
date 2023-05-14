@@ -49,8 +49,8 @@
                 continue to try and predict the winner each season; however, even longtime superfans of the
                 show can be left guessing, caught off guard by unexpected developments in the game. Over the
                 years, Survivor itself has also evolved, introducing new twists and advantages each season.
-                Given this ever-changing landscape, is it possible to predict the winner based on their
-                characteristics?</p>
+                Given this ever-changing landscape, <b>is it possible to predict the winner based on their
+                characteristics</b>?</p>
         <h3 id="problem">Problem</h3>
             <p>Because Survivor has been such a long running show, it does have a certain
                 level of popularity  and a core group of fans and viewers that continue to watch each year. This 
@@ -59,8 +59,8 @@
                 There are also some viewers who watch not just for entertainment, but because of the intricate 
                 social commentary and social dynamics of the show. 
             </p>
-            <p>This means, whoever the viewer is, in general, it would be interesting and helpful to have a tool 
-                that predicts the winner of a season based on demographic and gameplay information. This can be done
+            <p>This means, whoever the viewer is, in general, <b>it would be interesting and helpful to have a tool 
+                that predicts the winner of a season based on demographic and gameplay information</b>. This can be done
                 during the airing of the current season with only basic information, or after the season ends with all
                 of the information. These transparent predictions would inform the different types of viewers listed
                 above, as you know what factors and information go into the model.</p>
@@ -72,7 +72,7 @@
                 project of mine and it's also still in progress...</p>
         <h3 id="existing-methods">Existing methods</h3>
                 <p id="existing-methods">Currently, the main way viewers predict winners is called 
-                <a href="https://insidesurvivor.com/survivor-edgic-an-introduction-3094" target="_blank">Edgic</a>.</p>
+                <b><a href="https://insidesurvivor.com/survivor-edgic-an-introduction-3094" target="_blank">Edgic</a></b>.</p>
             <img src="https://inside-survivor.ams3.digitaloceanspaces.com/wp-content/uploads/2015/09/RatingDefinitions.png" 
                     alt="Edgic Rating Definitions" height="250px">
             <img src="https://inside-survivor.ams3.digitaloceanspaces.com/wp-content/uploads/2015/09/Edgic-toneChartDefinitions.png" 
@@ -81,12 +81,12 @@
                     alt="Edgic Visibility Scale" height="80px">
             <img src="https://inside-survivor.ams3.digitaloceanspaces.com/wp-content/uploads/2015/09/TableNamesColoursDone1.png" 
                     alt="Edgic Chart Example" height="400px">
-            <p> Some of the cons of this method is that it is very time consuming and fairly subjective to the individual viewer.</p>
+            <p> Some of the <b>cons of this method is that it is very time consuming and fairly subjective</b> to the individual viewer.</p>
             <p> How my project is different:
                 <ul>
                     <li>Since I am using an online dataset, the features may be more limited in some
-                        ways but the data is indisputable. The features are not subjective.</li>
-                    <li>A ML model would run faster than meticulously analyzing each episode of
+                        ways but the data is indisputable. The <b>features are not subjective</b>.</li>
+                    <li>A ML model would <b>run faster</b> than meticulously analyzing each episode of
                         a season.</li>
                     <li>Edgic uses the edit of the show to make predictions, which this project
                         doesn't take into account. The edit can tell viewers a lot about the dynamics 
@@ -102,7 +102,8 @@
                 <ul>
                     <li>I created a few visualizations for an open-ended "choose your own topic" class project for which I knew I wanted to
                         use for this project.</li>
-                    <li>I have attempted to code some models thus far... which are currently failing.
+                    <li>I have attempted to code some models thus far... most of them are currently failing, but one is showing some promise, 
+                        and I'm continuing to build upon it.
                         This means either my models are not on the right track or there is just not a good
                         way to predict (no factors stick out as important).</li>
                 </ul>
@@ -110,36 +111,47 @@
         <h3 id="process">Project process</h3>
             <p>The project process that I took can be likened to the Survivor process.</p>
                 <ul>
-                    <li>Meet the contestants (Exploratory Data Analysis):
+                    <li>Meet the contestants (<b>Exploratory Data Analysis</b>):
                         The first thing I did was look at all the data and perform
                         some exploratory data analysis. This was done by looking at descriptive statistics and 
                         making visualizations for some of the features.</li>
                         <img src="survivor/personality-type.png" alt="visualization" height="250px">
                         <img src="survivor/gender-race.png" alt="visualization" height="250px">
                         <img src="survivor/vote.png" alt="visualization" height="250px">
-                    <li>Tribal council (Data Cleaning and Prepping):
+                    <li>Tribal council (<b>Data Cleaning and Prepping</b>):
                         I then cleaned the data to get rid of redundant and unhelpful features.
                     </li>
-                    <li>Merge (Data Combination): 
+                    <li>Merge (<b>Data Combination</b>): 
                         Then, I combined the dataframes to get all of the necessary features into one place in order for the
                         model to receive the complete information.</li>
                         <img src="">
-                    <li>Individual challenges (Feature Engineering): 
+                    <li>Individual challenges (<b>Feature Engineering</b>): 
                         Using the merged dataframe, I performed feature engineering and reformatted the data by scaling or one hot
-                        encoding individual columns.
+                        encoding individual columns. For example, in one of the models I decided to focus only on aspects within the game. 
+                        So, I extracted information on how many challenges contestants won, how many times they were on the "right side of the
+                        vote" (voted for the person who ended up going home), and how many hidden immunity idols they won. 
                     </li>
-                    <li>Final tribal council (Run the Model): 
-                        Finally, I ran the model to get the predicted winner.</li>
+                        <img src="survivor/df_finaltribal.png" alt="dataframe" height="250px">
+                    <li>Final tribal council (<b>Run the Model</b>): 
+                        Finally, I ran the model to get the predicted winner. The model that used gameplay information and predicted the winner among
+                        the contestants at the final tribal council had an <b>accuracy of around 78%</b>, as compared to a baseline
+                        model that predicts all "win" or all "lose", with an accuracy of around 50%. The Matthew's correlation coefficient 
+                        was also used to measure the "quality" of the model's predictions. It output values of around 0.6 for both the train and 
+                        test set, meaning that the predictions that were made were better than an average random prediction (0), but not perfect (+1).</li>
                 </ul>
                 <p>This process was repeated multiple times, tuning features depending on what was successful or not. I am still in this process
-                of refining the model. The goal is to get a final model that performs better than random guessing.</p>
+                of refining the model. The goal is to get a final model that performs better than random guessing, and the current "final" model that I have does.</p>
         <h3 id="findings">Main findings</h3>
             <p>
                 In progress... <br>
                 How much do contestants demographics such as age, personality type, where
                 they're from contribute to whether or not they win? <br>
+                Based on the models that took the demographic information into account, there isn't much that distinguished winners just based on these 
+                characteristics. <br>
                 How much do contestants' gameplay outcomes and actions contribute to whether
                 or not they win? <br>
+                Based on the model that is currently performing the best, the gameplay is much more important and informs who the winner will be much more than
+                an individual's demographics and characteristics. <br>
 
                 A lot of luck is involved in this process, as many times individuals who win and come back to play again 
                 aren't as successful. In addition, the conditions of Survivor are meant to be harsh and unlike anything anyone has been
@@ -148,9 +160,16 @@
             </p>
         <h3 id="reflection">Reflection</h3>
         <p>
+            This project was definitely difficult, but super interesting for me, as a fan of Survivor! I think it is really testing my feature engineering skills, 
+            in that the majority of the features that actually are important need to be extracted and computed from the data - it is not just a given column. Just 
+            thinking of these features was also difficult. 
             <ul>
-                <li>Challenges of this project</li>
-                <li>What I could continue doing with it</li>
+                <li>Challenges of this project: Figuring out what features to use, how to evaluate the model, what model to use - these were all huge challenges that
+                    I'm still working at.
+                </li>
+                <li>What I could continue doing with it: I definitely could keep working at this project, coming up with more features and as I learn more, I can also 
+                    try other types of models.
+                </li>
                 <li>What could be better</li>
                 <li>What would I do differently next time</li>
             </ul>
