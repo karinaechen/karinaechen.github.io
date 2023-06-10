@@ -23,6 +23,8 @@
 }
 
 .about-me {
+	font-family: Open Sans;
+	font-weight: lighter;
 	font-size: 2.5em;
 	padding-right: 7vw;
 }

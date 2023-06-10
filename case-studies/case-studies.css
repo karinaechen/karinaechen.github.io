@@ -3,33 +3,37 @@
 
 .sidenav {
 	height: 100%;
-	width: 160px;
+	width: 25vw;
 	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
 	z-index: 1;
 	top: 0; /* Stay at the top */
 	left: 0;
 	background-color: #142B12; /* Black */
 	overflow-x: hidden; /* Disable horizontal scroll */
-	padding-top: 20px;
+	/* padding-top: 20px; */
 	font-family: EB Garamond;
+	padding-top: 25vh;
 }
 .sidenav a {
 	/* padding: 6px 8px 6px 16px; */
-	padding: 6px 8px 6px 16px;
+	padding: 6px 9vw 6px 16px;
 	text-decoration: none;
-	font-size: 1.1em;
+	font-size: 1.2em;
 	color: white;
 	display: block;
+	text-align: right;
 }
 .sidenav a:hover {
 	color: #52AA4B;
 }
 
 .main {
-	margin-left: 160px;
+	padding-top: 3vh;
+	padding-bottom: 5vh;
+	margin-left: 30vw;
 	/* padding: 0px 10px; */
-	padding-left: 2vw;
-	padding-right: 2.5vw;
+	/* padding-left: 17vw; */
+	padding-right: 17vw;
 }
 
 /* @media screen and (max-height: 450px) {
@@ -46,26 +50,27 @@
 
 h1 {
 	font-family: EB Garamond;
-	font-weight: lighter;
-	font-size: 2.5em;
+	/* font-weight: lighter; */
+	font-size: 3em;
 }
 h2 {
 	font-family: Open Sans;
 	font-weight: lighter;
-	font-size: 1.5em;
+	font-size: 1.8em;
 }
 h3 {
 	font-family: EB Garamond;
 	font-weight: lighter;
-	font-size: 1.3em;
+	font-size: 1.6em;
 }
 p {
 	font-family: Open Sans;
 	font-weight: lighter;
-	font-size: 1.1em;
+	font-size: 0.9em;
 }
 ul {
 	/* list-style: none; */
 	font-family: Open Sans;
 	font-weight: lighter;
+	font-size: 0.9em;
 }
