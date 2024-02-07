@@ -1,127 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-
-.main-about-landing {
-	border-top: 1px dashed #273F4B;
-	font-family: EB Garamond;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-grow: 1;
-	text-align: left;
-	margin-top: 1vh;
-	padding-left: 7vw;
-	padding-right: 7vw;
+body {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
-.about-main-section {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-grow: 1;
-	text-align: left;
-}
-
-.about-me {
-	font-family: Open Sans;
-	font-weight: lighter;
-	font-size: 2.5em;
-	padding-right: 7vw;
-}
-
-h1 {
-	font-family: EB Garamond;
-	font-weight: lighter;
-	font-size: 2.5em;
-}
 h2 {
-	font-family: Open Sans;
-	font-weight: lighter;
-	font-size: 1.5em;
-}
-h3 {
-	font-family: Open Sans;
-	font-weight: lighter;
-	font-size: 1.2em;
-}
-h4 {
-	font-family: Open Sans;
-	font-weight: lighter;
-	font-size: 1.1em;
-}
-.overall-section ul {
-	font-family: Open Sans;
-	font-weight: lighter;
-	font-size: 1em;
-	padding-right: 15vw;
+	font-size: xx-large;
 }
 
-.education, .experience {
-	border-top: 1px dashed #273F4B;
-	padding-left: 7vw;
-	padding-right: 7vw;
-	padding-bottom: 6vh;
-}
-
-.course-list {
-	font-family: Open Sans;
+h2, h1, p {
 	font-weight: lighter;
-	font-size: 0.8em;
-}
-.num, .language, .library {
-	vertical-align: top;
-	text-align: right;
-	padding-right: 10px;
-}
-.name, .desc {
-	vertical-align: top;
-	text-align: left;
-	padding-left: 10px;
 }
 
-.skills {
-	font-family: Open Sans;
+p {
+	font-family: 'Albert Sans', sans-serif;;
+}
+
+section.panel {
+	display: flex;
+	flex-direction: row;
 	font-weight: lighter;
-	padding-bottom: 6vh;
-	border-top: 1px dashed #273F4B;
-	padding-left: 7vw;
-	padding-right: 7vw;
 }
 
-@media (max-width: 920px) {
-	.about-main-section {
+div.static {
+	align-items: center;
+	height: 100vh;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	width: 40%;
+	text-align: center;
+	padding: 0px 100px 0px 50px;
+}
+
+#pfp {
+    display: block;
+	width: 200px;
+    float: top;
+    border-radius: 50%;
+    border: 3px solid #00212D;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 149px;
+}
+
+.contact a {
+	text-decoration: none;
+	color: #00212D;
+	opacity: 0.8;
+	padding: 0px 15px 0px 0px;
+}
+
+.contact a:hover {
+	opacity: 1;
+	text-decoration: none;
+}
+
+div.scroll {
+	margin-top: 49px;
+	width: 60%;
+	padding-right: 50px;
+}
+
+div.scroll section.project {
+	margin-bottom: 40px;
+}
+
+div.scroll section.project h1 {
+	margin-bottom: 0;
+}
+
+div.scroll section.project p {
+	padding-top: 7px;
+}
+
+div.scroll section.project p.link {
+	float: right;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+div.scroll section.project p.link a{
+	opacity: 0.8;
+	color: #00212D;
+	text-decoration: none;
+}
+
+div.scroll section.project p.link a:hover {opacity: 1;}
+
+@media (max-width: 800px) {
+	section.panel {
+		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		text-align: left;
-
-		margin-left: 1vw;
-		margin-right: 1vw;
 	}
-
-	.education, .experience { 
-		padding-top: 2vh;
-		min-height: calc(100vh - 2vh);
+	div.static {
+		padding: 100px 0px 0px 0px;
+		width: 100%;
+		margin: 0;
+		position: static;
 	}
-	.skills {
-		padding-top: 2vh;
-		min-height: calc(100vh - 2vh - 70px);
-	}
-}
-
-@media (max-width: 280px) {
-	.about-main-section {
-		flex-direction: column;
-		justify-content: center;
-		text-align: left;
-
-		margin-left: 1vw;
-		margin-right: 0;
-	}
-
-	.education, .experience { 
-		padding-top: 2vh;
-	}
-	.skills {
-		padding-top: 2vh;
+	div.scroll {
+		width: 100%;
+		padding: 0;
+		margin: 0;
 	}
 }

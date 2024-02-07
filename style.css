@@ -1,36 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&family=Nanum+Myeongjo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap');
 
-body {
-	
+:root {
+	--fontColor : #00212D;
+	--subtitleColour: white;
+	/* --cardLinkHoverColour: rgb(151, 208, 212); */
+	/* --cardLinkColour: #ff7965; */
+	/* --backgroundColour : linear-gradient(to top,#4a6064, #283436,#283436); */
+	/* --overlay: rgba(0, 0, 0, 0.4); */
+	--navColor: #00212D;
+	/* --pathColour: #283436; */
+	--headerFont: 'Nanum Myeongjo', serif;
+	--bodyFont: 'Albert Sans', sans-serif;
 }
 
-.nav {
-	margin-right: 1vw;
-	/* overflow: visible; */
+/* body {
+	background-color: white;
+} */
+
+#nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+  	z-index: 2;
+	background-color: var(--navColor);
 }
 
-.nav ul {
+#nav li {
 	list-style: none;
-	color: #142B12;
-	margin: 0;
-	text-align: right;
-	font-family: Open Sans;
+	color: var(--subtitleColour);
+	margin: 15px 20px;
+	text-align: center;
+	font-family: var(--bodyFont);
 	font-weight: lighter;
 }
 
-.nav a {
+#nav > li > a {
+	opacity: 0.8;
+	color: var(--subtitleColour);
 	text-decoration: none;
-	box-shadow: inset 0 0 0 0 #70c464;
-	color: #20431D;
-	margin: 0 -.25rem;
-	padding: 0 .25rem;
-	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-	font-size: calc((0.01 * 100vw + (5px)));
 }
-.nav a:hover {
-	box-shadow: inset 100px 0 0 0 #70c464;
-	/* #20431D; */
-	color: white;
-	cursor: pointer;
+
+#nav > li > a:hover {opacity: 1;}
+
+p.header {
+	font-family: var(--headerFont);
+	font-size: 8vw;
+	letter-spacing: 0.03em;
+	color: #00212D !important;
+}
+
+@media (max-width: 800px) {
+	body {
+		font-size: 16px;
+	}
 }

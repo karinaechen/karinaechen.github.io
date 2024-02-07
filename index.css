@@ -1,169 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&family=Nanum+Myeongjo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap');
 
-/* body, body * { */
-body:not(.nav) {
-	/* cursor: none; */
-	cursor: default;
+body {
 	overflow: hidden;
 }
 
-.shapes {
-	position: relative;
-	height: 100vh;
-	width: 100vw;
-	background: #142B12;
-	overflow: hidden;
-}
-  
-.shape {
-	will-change: transform;
-	position: absolute;
-	border-radius: 50%;
-}
-.shape.shape-1 {
-	background: #20431D;
-	width: 650px;
-	height: 650px;
-	margin: -325px 0 0 -325px;
-}
-.shape.shape-2 {
-	background: #398733; 
-	/* #52AA4B; */
-	width: 440px;
-	height: 440px;
-	margin: -220px 0 0 -220px;
-}
-.shape.shape-3 {
-	background: #52AA4B;
-	/* #C3E1C0; */
-	width: 270px;
-	height: 270px;
-	margin: -135px 0 0 -135px;
-}
-  
-#main-landing {
-	top: 0;
-	left: 0;
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	width: 100vw;
-	background: #fff;
-	mix-blend-mode: screen;
-}
-
-.call-to-action {
-	max-width: 83vw;
-}
-  
-h1 {
-	color: #000;
-	margin: 0;
-	font-family: GB Garamond;
-	margin-left: 5.5vw;
-}
-
-span {
-	color: #000;
-	margin: 0;
-	font-family: Open Sans;
-	font-weight: lighter;
-	margin-left: 5.5vw;
-}
-
-/* .nav {
-	margin-right: 1vw;
-} */
-
-/* ul {
-	list-style: none;
-	color: #000;
-	margin: 0;
+.intro {
 	text-align: right;
-	font-family: Open Sans;
+	line-height: 0.05;
+	z-index: 1;
+	position: absolute;
+	top: 25vh;
+	right: 5vw;
+}
+
+p.typewrite{
+	font-family: var(--bodyFont);
 	font-weight: lighter;
-} */
-
-/* a {
-	text-decoration: none;
-	color: #000;
-}
-a:hover {
-	cursor: pointer;
-} */
-
-.nav a:hover {
-	box-shadow: inset 100px 0 0 0 #20431D;
-	/* #20431D; */
-	color: white;
-	cursor: pointer;
+	font-size: 2vw;
+	color:#00212D !important;
 }
 
-@media (min-width: 350px) {
-	h1 {
-		font-size: calc((0.1 * 100vw + (58px)));
-	}
-	span {
-		font-size: calc((0.03 * 100vw + (10px)));
-	}
-	a {
-		font-size: calc((0.01 * 100vw + (5px)));
-	}
-}
-  
-/* .cursor :not(.nav) {
-	position: fixed;
-	background: #142B12;
-	width: 20px;
-	height: 20px;
-	margin: -12px 0 0 -15px;
-	border-radius: 50%;
-	will-change: transform;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-		-ms-user-select: none;
-			user-select: none;
-	pointer-events: none;
-	z-index: 10000;
-} */
-  
-::-moz-selection {
-	color: #fff;
-	background: #142B12;
-}
-  
-::selection {
-	color: #fff;
-	background: #142B12;
-}
-
-.home-main-section {
-	display: flex;
-	flex-grow: 1;
-}
-
-.home-main-section .call-to-action {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	/* margin: 1rem; */
-	align-self: center;
-}
-
-a {
-	text-decoration: none;
-	box-shadow: inset 0 0 0 0 #20431D;
-	color: #20431D;
-	margin: 0 -.25rem;
-	padding: 0 .25rem;
-	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-	font-size: calc((0.01 * 100vw + (5px)));
-}
-a:hover {
-	box-shadow: inset 100px 0 0 0 #20431D;
-	color: white;
-	cursor: pointer;
+.wave svg{
+	position: absolute;
+	bottom: 0vh;
+	left: 0vw;
 }
