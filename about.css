@@ -5,6 +5,7 @@ body {
 	margin-bottom: 0;
 	padding-top: 0;
 	padding-bottom: 0;
+	font-weight: lighter;
 }
 
 h2 {
@@ -16,16 +17,25 @@ h2, h1, p {
 }
 
 p {
-	font-family: 'Albert Sans', sans-serif;;
+	font-family: 'Albert Sans', sans-serif;
 }
 
-section.panel {
+/* section.panel {
 	display: flex;
 	flex-direction: row;
 	font-weight: lighter;
+} */
+
+header {
+	width: 290px;
+	position: fixed;
+	/* height: 100vh; */
+	float: left;
+	padding: 0px 100px 0px 50px;
+	text-align: center;
 }
 
-div.static {
+/* div.static {
 	align-items: center;
 	height: 100vh;
 	position: sticky;
@@ -34,14 +44,14 @@ div.static {
 	width: 40%;
 	text-align: center;
 	padding: 0px 100px 0px 50px;
-}
+} */
 
 #pfp {
     display: block;
 	width: 200px;
-    float: top;
+    /* float: top; */
     border-radius: 50%;
-    border: 3px solid #00212D;
+    border: 2px solid #00212D;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 149px;
@@ -59,7 +69,42 @@ div.static {
 	text-decoration: none;
 }
 
-div.scroll {
+section.scroll {
+	float: right;
+	width: 60%;
+	margin-top: 49px;
+	/* padding-right: 50px; */
+	padding: 20px 50px 0 0;
+}
+
+section.scroll section.project {
+	margin-bottom: 40px;
+}
+
+section.scroll section.project h1 {
+	margin-bottom: 0;
+}
+
+section.scroll section.project p {
+	padding-top: 7px;
+}
+
+section.scroll section.project p.link {
+	float: right;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+section.scroll section.project p.link a{
+	opacity: 0.8;
+	color: #00212D;
+	text-decoration: none;
+}
+
+section.scroll section.project p.link a:hover {opacity: 1;}
+
+/* div.scroll {
 	margin-top: 49px;
 	width: 60%;
 	padding-right: 50px;
@@ -90,10 +135,28 @@ div.scroll section.project p.link a{
 	text-decoration: none;
 }
 
-div.scroll section.project p.link a:hover {opacity: 1;}
+div.scroll section.project p.link a:hover {opacity: 1;} */
 
-@media (max-width: 800px) {
-	section.panel {
+@media (max-width: 1250px) {
+	header {
+		width: 240px;
+		position: fixed;
+		/* height: 100vh; */
+		float: left;
+		padding: 0px 50px 0px 0;
+		text-align: center;
+	}
+
+	section.scroll {
+		float: right;
+		width: 60%;
+		margin-top: 49px;
+		padding: 50px 20px 0 0;
+	}
+}
+
+@media (max-width: 1024px) {
+	/* section.panel {
 		display: flex;
 		flex-direction: column;
 	}
@@ -104,6 +167,29 @@ div.scroll section.project p.link a:hover {opacity: 1;}
 		position: static;
 	}
 	div.scroll {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	} */
+
+	header {
+		padding: 100px 0px 0px 0px;
+		width: 100%;
+		margin: 0;
+		position: static;
+	}
+
+	#pfp {
+		display: block;
+		width: 200px;
+		border-radius: 50%;
+		border: 2px solid #00212D;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+	}
+
+	section.scroll {
 		width: 100%;
 		padding: 0;
 		margin: 0;
