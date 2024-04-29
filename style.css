@@ -47,13 +47,6 @@
 
 #nav > li > a:hover {opacity: 1;}
 
-p.header {
-	font-family: var(--headerFont);
-	font-size: 8vw;
-	letter-spacing: 0.03em;
-	color: #00212D !important;
-}
-
 @media (max-width: 800px) {
 	body {
 		font-size: 16px;
