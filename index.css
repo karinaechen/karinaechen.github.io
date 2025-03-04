@@ -21,6 +21,7 @@ p.header {
 	letter-spacing: 0.03em;
 	color: #00212D !important;
 	margin: 0;
+	line-height: 100%;
 }
 
 p.typewrite {
